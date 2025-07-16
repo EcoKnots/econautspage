@@ -6,7 +6,8 @@ import About from "@/components/about"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import FAQ from "@/components/faq"
-import UpcomingEvents from "@/components/upcomingEvents"
+import VendorSection from "@/components/vendor_section"
+import Benefits from "@/components/Benefits"
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
       <Header />
       <Hero />
       <About/>
-      {/* <Features/> */}
+      <Benefits/>
+      <Features/>
       <FAQ/>
       <Contact/>
       <Footer/>

@@ -7,20 +7,24 @@ import { Plus, Minus } from "lucide-react"
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null)
 
-  const faqItems = [
-    {
-      question: "What is ecoknots?",
-      answer: "Consectetur fugiat elit velit enim labore fugiat sit in tempor ut."
-    },
-    {
-      question: "Is it ecoknots",
-      answer: "Est nisi nulla incididunt sit mollit ipsum reprehenderit dolor dolor duis commodo incididunt enim incididunt."
-    },
-    {
-      question: "why is eco knots",
-      answer: "Proident occaecat pariatur nulla amet culpa qui ullamco dolore."
-    }
-  ]
+const faqItems = [
+  {
+    question: "What is Econauts?",
+    answer:
+      "Econauts is a sustainability-first event platform that transforms traditional celebrations into eco-friendly experiences. From flea markets to weddings, we combine fun with environmental responsibility."
+  },
+  {
+    question: "What kind of events do you organize?",
+    answer:
+      "We organize eco flea markets, zero-waste weddings, green birthday parties, and community-based sustainability workshops. Every event is designed to be joyful, meaningful, and low-impact."
+  },
+  {
+    question: "How do I become a vendor or partner?",
+    answer:
+      "If you're an eco-conscious brand or artisan, fill out our contact form with your details. We’re always looking to collaborate with local businesses aligned with our vision."
+  }
+]
+
 
   const toggleAnswer = (index) => {
     setOpenIndex(openIndex === index ? null : index)

@@ -4,6 +4,8 @@ import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
+
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,26 +19,16 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center pointer-events-auto">
-            <Link href="/" className="text-white font-bold text-xl">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="mr-2"
-              >
-                <path
-                  d="M12 2L2 7L12 12L22 7L12 2Z"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
+          <div className="w-[100px] h-[50px] overflow-hidden flex items-center justify-center">
+            <Image
+              src="/icon.png"
+              alt="Logo"
+              width={100}
+              height={125}
+              className="object-contain "
+            />
           </div>
+
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 pointer-events-auto">

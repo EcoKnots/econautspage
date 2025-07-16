@@ -21,10 +21,10 @@ export default function UpcomingEvents() {
               ease: "linear"
             }}
           >
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Central Park!</span>
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Central Park!</span>
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Central Park!</span>
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Central Park!</span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
           </motion.div>
         </div>
 
