@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Button from "@/components/Button"
 import UpcomingEvents from "@/components/upcomingEvents"
+import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -33,9 +34,20 @@ export default function Hero() {
               
               {/* Heading */}
               <div className="space-y-6 text-left">
-                <h1 className="text-5xl text-white md:text-6xl font-bold leading-tight">
+                {/* Logo with background */}
+                <div className="w-[500px] h-[50px] flex items-center py-2">
+                  <Image
+                    src="/name_icon.png"
+                    alt="Logo"
+                    width={300}
+                    height={300}
+                    className="object-contain"
+                  />
+                </div>
+
+                <h2 className="text-2xl text-white md:text-3xl font-bold leading-tight">
                   Celebrate Green. Live Clean.
-                </h1>
+                </h2>
                 <p className="text-xl text-gray-300">
                   Econauts brings eco-friendly flea markets and sustainable events to your neighborhood.
                   Discover conscious living through community, creativity, and celebration.
@@ -55,8 +67,8 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-              <UpcomingEvents />
+
+      <UpcomingEvents />
     </section>
-    
   )
 }

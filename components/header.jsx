@@ -23,8 +23,8 @@ export default function Header() {
             <Image
               src="/icon.png"
               alt="Logo"
-              width={100}
-              height={125}
+              width={50}
+              height={50}
               className="object-contain "
             />
           </div>
