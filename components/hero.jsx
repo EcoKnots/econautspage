@@ -45,23 +45,22 @@ export default function Hero() {
                   />
                 </div>
 
-                <h2 className="text-2xl text-white md:text-3xl font-bold leading-tight">
-                  Celebrate Green. Live Clean.
+                <h2 className="text-2xl text-white md:text-3xl font-semibold leading-tight">
+                  From Grey to Green. From Habit to Harmony
                 </h2>
                 <p className="text-xl text-gray-300">
-                  Econauts brings eco-friendly flea markets and sustainable events to your neighborhood.
-                  Discover conscious living through community, creativity, and celebration.
+                 Transforming how we live, build, grow, and think — for a cleaner, wiser, sustainable tomorrow.
                 </p>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <Button href="#contact" variant="primary" size="lg">
-                  Book an Eco Event
+                  Join the Movement
                 </Button>
-                <Button href="#vendor" variant="secondary" size="lg">
+                {/* <Button href="#vendor" variant="secondary" size="lg">
                   Become a Vendor
-                </Button>
+                </Button> */}
               </div>
             </div>
           </div>

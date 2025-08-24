@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 import FAQ from "@/components/faq"
 import VendorSection from "@/components/vendor_section"
 import Benefits from "@/components/Benefits"
+import DigitalTools from "@/components/Digital"
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <Hero />
       <About/>
       <Benefits/>
-      {/* <Features/> */}
-      <FAQ/>
+      <Features/>
+      {/* <FAQ/> */}
+      <DigitalTools/>
       <Contact/>
       <Footer/>
     </main>

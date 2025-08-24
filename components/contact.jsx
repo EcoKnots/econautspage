@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react"
 import { motion } from "framer-motion"
 import Button from "@/components/Button"
 import { sendEmail } from "@/lib/sendEmail"
+import { Mail, Instagram, MessageCircle } from "lucide-react"
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -26,14 +27,14 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-32 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="contact" className="py-32 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">Let's Celebrate Sustainably.</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-primary mb-6">Join the Movement.</h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
             Ready to host an event or become an Econauts vendor?
           </p>
@@ -106,21 +107,40 @@ export default function Contact() {
               </div>
             )}
           </form>
+         <div className="mt-8 pt-8 border-t border-gray-100 text-center">
+          <p className="text-sm text-gray-600 mb-4">
+            or connect via WhatsApp/Instagram for queries, collaborations, or feedback.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a
+              href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20query%20regarding%20Econauts."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:underline"
+            >
+              <MessageCircle className="w-4 h-4" />
+              <span>WhatsApp</span>
+            </a>
 
-          <div className="mt-8 pt-8 border-t border-gray-100">
-            <p className="text-sm text-gray-500 mb-4">Or reach out directly:</p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="mailto:official.econauts@gmail.com?subject=Econauts Inquiry"
-                className="text-primary hover:text-secondary transition-colors font-medium"
-                rel="noopener noreferrer"
-              >
-                official.econauts@gmail.com
-              </a>
-              <span className="hidden sm:block text-gray-300">|</span>
-              <span className="text-gray-600">Response within 24 hours</span>
-            </div>
+            <a
+              href="https://instagram.com/econauts_official"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:underline"
+            >
+              <Instagram className="w-4 h-4" />
+              <span>Instagram</span>
+            </a>
+
+            <a
+              href="mailto:official.econauts@gmail.com?subject=Econauts%20Inquiry"
+              className="flex items-center gap-2 hover:underline"
+            >
+              <Mail className="w-4 h-4" />
+              <span>Email</span>
+            </a>
           </div>
+        </div>
         </motion.div>
       </div>
     </section>
