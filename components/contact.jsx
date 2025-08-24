@@ -113,7 +113,7 @@ export default function Contact() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
-              href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20query%20regarding%20Econauts."
+              href="https://wa.me/9980963369?text=Hi!%20I%20have%20a%20query%20regarding%20Econauts."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:underline"
