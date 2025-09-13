@@ -113,7 +113,7 @@ export default function Contact() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <a
-              href="https://wa.me/9980963369?text=Hi!%20I%20have%20a%20query%20regarding%20Econauts."
+              href="https://wa.me/8374551247?text=Hi!%20I%20have%20a%20query%20regarding%20Econauts."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:underline"
@@ -123,7 +123,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="https://instagram.com/econauts_official"
+              href="https://www.instagram.com/we.are.econauts/?next=%2F"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:underline"
@@ -133,7 +133,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="mailto:official.econauts@gmail.com?subject=Econauts%20Inquiry"
+              href="mailto:official@econauts.in?subject=Econauts%20Inquiry"
               className="flex items-center gap-2 hover:underline"
             >
               <Mail className="w-4 h-4" />

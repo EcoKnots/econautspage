@@ -21,10 +21,10 @@ export default function UpcomingEvents() {
               ease: "linear"
             }}
           >
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
-            <span>Upcoming Event: Join us for EcoFest 2025 on June 15th in Jubilee Hills!</span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on 28th sep in ASBL lakeside khajaguda </span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on 28th sep in ASBL lakeside khajaguda </span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on 18th oct in Ramky Towers</span>
+            <span>Upcoming Event: Join us for EcoFest 2025 on 18th oct in Ramky Towers</span>
           </motion.div>
         </div>
 

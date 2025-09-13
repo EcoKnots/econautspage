@@ -19,14 +19,14 @@ export default function Footer() {
           
           <div className="flex gap-6">
             <Link
-              href="https://instagram.com/"
+              href="https://www.instagram.com/we.are.econauts/?next=%2F"
               target="_blank"
               className="text-white hover:text-primary transition-colors"
             >
               Instagram
             </Link>
             <Link
-              href="mailto:anirudh.kannan321@gmail.com"
+              href="mailto:official@econauts.in?subject=Econauts%20Inquiry"
               className="text-white hover:text-primary transition-colors"
             >
               Email
