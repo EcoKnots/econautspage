@@ -7,7 +7,10 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex items-center bg-green-900">
+    <section className="relative w-full min-h-screen flex items-center bg-[url('/eco-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-green-900/80"></div>
+
       {/* Content */}
       <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -17,32 +20,31 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           {/* Left Content Box */}
-          <div className="lg:w-1/2 lg:max-w-[640px] w-full h-full flex items-center justify-center">
-            <div className="max-w-[520px] w-full space-y-8 py-12">
+          <div className="lg:w-1/2 w-full h-full flex items-center justify-center lg:justify-start">
+            <div className="max-w-[520px] w-full space-y-8 py-12 text-center lg:text-left">
               
-              {/* Heading */}
-              <div className="space-y-6 text-left">
-                {/* Logo */}
-                <div className="w-[500px] h-[50px] flex items-center py-2">
-                  <Image
-                    src="/name_icon.png"
-                    alt="Logo"
-                    width={300}
-                    height={300}
-                    className="object-contain"
-                  />
-                </div>
-
-                <h2 className="text-2xl text-white md:text-3xl font-semibold leading-tight">
-                  From Grey to Green. From Habit to Harmony
-                </h2>
-                <p className="text-xl text-gray-200">
-                  Transforming how we live, build, grow, and think — for a cleaner, wiser, sustainable tomorrow.
-                </p>
+              {/* Logo */}
+              <div className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] flex items-center mx-auto lg:mx-0">
+                <Image
+                  src="/name_icon.png"
+                  alt="Logo"
+                  width={450}
+                  height={80}
+                  className="object-contain w-full h-auto"
+                  priority
+                />
               </div>
 
+              {/* Heading */}
+              <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold leading-tight">
+                From Grey to Green. From Habit to Harmony
+              </h2>
+              <p className="text-base md:text-lg text-gray-200">
+                Transforming how we live, build, grow, and think — for a cleaner, wiser, sustainable tomorrow.
+              </p>
+
               {/* CTA Buttons */}
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                 <Button href="#contact" variant="primary" size="lg">
                   Join the Movement
                 </Button>

@@ -30,10 +30,18 @@ export default function UpcomingEvents() {
 
         {/* Button */}
         <div className="flex-shrink-0 ml-4">
-          <Button href="#events" variant="primary" size="sm">
-            View Details
-          </Button>
-        </div>
+  <a
+    href="https://drive.google.com/uc?export=download&id=1_HXQT9dQw6VdAy8hsXd2D3xNIUpPzoNq"
+    download="EcoFestDetails.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button variant="primary" size="sm">
+      View Details
+    </Button>
+  </a>
+</div>
+
       </div>
     </div>
 
