@@ -21,25 +21,27 @@ export default function Hero() {
         >
           {/* Left Content Box */}
           <div className="lg:w-1/2 w-full h-full flex items-center justify-center lg:justify-start">
-            <div className="max-w-[520px] w-full space-y-8 py-12 text-center lg:text-left">
+            <div className="max-w-[520px] w-full space-y-6 py-12 text-center lg:text-left">
               
               {/* Logo */}
-              <div className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] flex items-center mx-auto lg:mx-0">
+              <div className="w-full flex justify-center lg:justify-start mt-6 sm:mt-0">
                 <Image
-                  src="/name_icon.png"
+                  src="/name_icon2.png"
                   alt="Logo"
                   width={450}
                   height={80}
-                  className="object-contain w-full h-auto"
+                  className="object-contain w-full max-w-[200px] sm:max-w-[280px] md:max-w-[350px] lg:max-w-[450px] h-auto"
                   priority
                 />
               </div>
 
               {/* Heading */}
-              <h2 className="text-2xl md:text-3xl lg:text-4xl text-white font-semibold leading-tight">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-white font-semibold leading-tight">
                 From Grey to Green. From Habit to Harmony
               </h2>
-              <p className="text-base md:text-lg text-gray-200">
+
+              {/* Subheading */}
+              <p className="text-sm sm:text-base md:text-lg text-gray-200">
                 Transforming how we live, build, grow, and think — for a cleaner, wiser, sustainable tomorrow.
               </p>
 
@@ -48,9 +50,6 @@ export default function Hero() {
                 <Button href="#contact" variant="primary" size="lg">
                   Join the Movement
                 </Button>
-                {/* <Button href="#vendor" variant="secondary" size="lg">
-                  Become a Vendor
-                </Button> */}
               </div>
             </div>
           </div>
