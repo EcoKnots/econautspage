@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="min-h-screen relative">
       {/* ✅ Popup always sits on top until closed */}
-      <LandingPopup />
+      {/* <LandingPopup /> */}
 
       <Header />
       <Hero />
